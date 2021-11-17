@@ -14,8 +14,14 @@ public class Alumno {
         nombre = nombreCompleto;
         numeroMatricula = numeroMatriculaAlumno;
         edad = edadAlumno;
-        nombre.substring(3 , 3);
+        
         numeroMatricula.substring(4 , 4);
+        if (nombre.length() < 3) {
+            System.out.println("Error");
+        }
+        if (numeroMatricula.length() < 4) {
+            System.out.println("Error");
+        }
     }
 
     /**
