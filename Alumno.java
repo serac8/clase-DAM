@@ -14,6 +14,8 @@ public class Alumno {
         nombre = nombreCompleto;
         numeroMatricula = numeroMatriculaAlumno;
         edad = edadAlumno;
+        nombre.substring(3 , 3);
+        numeroMatricula.substring(4 , 4);
     }
 
     /**
@@ -42,6 +44,7 @@ public class Alumno {
      * en su cuenta de Github en formato de 7 caracateres
      */
     public String getNombreUsuarioGithub() {
+       
         return nombre.substring(0, 3) + numeroMatricula.substring(0, 4);
     }
 }
